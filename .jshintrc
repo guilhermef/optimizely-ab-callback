@@ -1,0 +1,14 @@
+{
+    "node": true,
+    "camelcase": true,
+    "curly": true,
+    "immed": true,
+    "latedef": true,
+    "newcap": false,
+    "noarg": true,
+    "undef": true,
+    "unused": true,
+    "strict": false,
+    "trailing": true,
+    "smarttabs": true
+}
