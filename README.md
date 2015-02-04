@@ -9,18 +9,18 @@ Configure your optmizely to run the
     window.OptimizelyAbCallback.init();
 
 ![step-1](/../master/docs/step-1.png?raw=true "step-1")
-    on the experiment screen click on "Options" then "Experiment Javascript"
+
+on the experiment screen click on "Options" then "Experiment Javascript"
 
 ![step-2](/../master/docs/step-2.png?raw=true "step-2")
-    on the script's popup add:
+
+on the script's popup add:
 
     window.OptimizelyAbCallback.init();
 
-    and then "apply" and "save".
+and then "apply" and "save".
 
-grab the [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)).
-
-put the JS file on your page and run:
+put the JS file [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)) on your page and run:
 
     window.OptimizelyAbCallback.includeABScript(OptimizelyProjectId);
 
