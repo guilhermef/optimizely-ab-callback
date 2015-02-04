@@ -1,32 +1,38 @@
 # OptimizelyAbCallback
 
-Gives Optimizely the power of the javascript callback
-
-## About
-
-A JavaScript library by Guilherme Souza.
-
-See the [project homepage](http://guilhermef.github.io/OptimizelyAbCallback).
+Optimizely with callbacks.
 
 ## Installation
 
-Using Bower:
+Configure your optmizely to run the
 
-    bower install OptimizelyAbCallback
+    window.OptimizelyAbCallback.init();
 
-Or grab the [source](https://github.com/guilhermef/OptimizelyAbCallback/dist/OptimizelyAbCallback.js) ([minified](https://github.com/guilhermef/OptimizelyAbCallback/dist/OptimizelyAbCallback.min.js)).
+![step-1](/../master/docs/step-1.png?raw=true "step-1")
+    on the experiment screen click on "Options" then "Experiment Javascript"
 
-## Usage
+![step-2](/../master/docs/step-2.png?raw=true "step-2")
+    on the script's popup add:
 
-Basic usage is as follows:
+    window.OptimizelyAbCallback.init();
 
-    OptimizelyAbCallback();
+    and then "apply" and "save".
 
-For advanced usage, see the documentation.
+grab the [source](https://github.com/guilhermef/optimizely-ab-callback/dist/OptimizelyAbCallback.js) ([minified](https://github.com/guilhermef/optimizely-ab-callback/dist/OptimizelyAbCallback.min.js)).
 
-## Documentation
+put the JS file on your page and run:
 
-Start with `docs/MAIN.md`.
+    window.OptimizelyAbCallback.includeABScript(OptimizelyProjectId);
+
+That will include the optimizely script.
+after that just call:
+
+    var experimentCallback = function(variation) {
+      console.log(variation);
+    };
+
+    window._optiab.push([experimentID, experimentCallback]);
+
 
 ## Contributing
 
@@ -35,8 +41,6 @@ We'll check out your contribution if you:
 * Provide a comprehensive suite of tests for your fork.
 * Have a clear and documented rationale for your changes.
 * Package these up in a pull request.
-
-We'll do our best to help you out with any contribution issues you may have.
 
 ## License
 

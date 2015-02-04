@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       options: {
         banner: ['/*! <%= pkg.name.replace(".js", "") %> <%= grunt.template.today("dd-mm-yyyy") %> */',
                  '/*! VERSION: <%= pkg.version %> */',
-                 '/*! src: <%= pkg.repository.url.replace(".git", "").replace("git:", "http:") %> */\n'].join('\n')
+                 '/*! <%= pkg.repository.url.replace(".git", "").replace("git:", "http:") %> */\n'].join('\n')
       },
       dist: {
         files: {

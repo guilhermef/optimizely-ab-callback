@@ -52,7 +52,7 @@ describe("OptimizelyAbCallback", function() {
     window._optiab.push(['654321', shouldRetunVariationSlug]);
   });
 
-  it("When experiment disabled", function(done){
+  it("When experiment disabled _optiab after init", function(done){
     var shouldRetunVariationSlug = function(variation) {
       expect(document.documentElement.classList).toContain('ab-654321-original');
       expect(variation).toBe('original');
@@ -68,5 +68,24 @@ describe("OptimizelyAbCallback", function() {
     };
     window.OptimizelyAbCallback.init();
     window._optiab.push(['654321', shouldRetunVariationSlug]);
+  });
+
+  it("When experiment disabled _optiab before init", function(done){
+    var shouldRetunVariationSlug = function(variation) {
+      expect(document.documentElement.classList).toContain('ab-123456-original');
+      expect(variation).toBe('original');
+      done();
+    };
+    window.optimizely = {
+      data:{
+        state: {
+          activeExperiments: [],
+          variationNamesMap: {}
+        }
+      }
+    };
+    window._optiab = window._optiab || [];
+    window._optiab.push(['123456', shouldRetunVariationSlug]);
+    window.OptimizelyAbCallback.init();
   });
 });
