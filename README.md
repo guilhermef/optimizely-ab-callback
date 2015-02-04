@@ -18,9 +18,9 @@ on the experiment screen click on "Options" then "Experiment Javascript"
 
 on the script's popup add:
 ```JavaScript
-    /* _optimizely_evaluate=force */
-    window.OptimizelyAbCallback.init();
-    /* _optimizely_evaluate=safe */
+/* _optimizely_evaluate=force */
+window.OptimizelyAbCallback.init();
+/* _optimizely_evaluate=safe */
 ```
 
 and then "apply" and "save".
@@ -30,18 +30,18 @@ and then "apply" and "save".
 put the JS file [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)) on your page and run:
 
 ```JavaScript
-    window.OptimizelyAbCallback.includeABScript(OptimizelyProjectId);
+window.OptimizelyAbCallback.includeABScript(OptimizelyProjectId);
 ```
 
 That will include the optimizely script.
 after that just call:
 
 ```JavaScript
-    var experimentCallback = function(variation) {
-      console.log(variation);
-    };
+var experimentCallback = function(variation) {
+  console.log(variation);
+};
 
-    window._optiab.push([experimentID, experimentCallback]);
+window._optiab.push([experimentID, experimentCallback]);
 ```
 
 ## Contributing
