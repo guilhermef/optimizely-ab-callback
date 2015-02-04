@@ -6,15 +6,18 @@ Optimizely with callbacks.
 
 Configure your optmizely to run the
 
+    /* _optimizely_evaluate=force */
     window.OptimizelyAbCallback.init();
+    /* _optimizely_evaluate=safe */
 
 on the experiment screen click on "Options" then "Experiment Javascript"
 
 ![step-1](/../master/docs/step-1.png?raw=true "step-1")
 
 on the script's popup add:
-
+    /* _optimizely_evaluate=force */
     window.OptimizelyAbCallback.init();
+    /* _optimizely_evaluate=safe */
 
 and then "apply" and "save".
 
