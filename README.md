@@ -8,17 +8,17 @@ Configure your optmizely to run the
 
     window.OptimizelyAbCallback.init();
 
-![step-1](/../master/docs/step-1.png?raw=true "step-1")
-
 on the experiment screen click on "Options" then "Experiment Javascript"
 
-![step-2](/../master/docs/step-2.png?raw=true "step-2")
+![step-1](/../master/docs/step-1.png?raw=true "step-1")
 
 on the script's popup add:
 
     window.OptimizelyAbCallback.init();
 
 and then "apply" and "save".
+
+![step-2](/../master/docs/step-2.png?raw=true "step-2")
 
 put the JS file [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)) on your page and run:
 
