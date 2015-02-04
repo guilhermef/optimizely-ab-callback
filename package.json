@@ -2,12 +2,12 @@
   "name": "OptimizelyAbCallback",
   "version": "1.0.0",
   "main": "dist/OptimizelyAbCallback.min.js",
-  "description": "Gives Optimizely the power of the javascript callback",
+  "description": "OptimizelyAB with callbacks",
   "repository": {
     "type": "git",
     "url": "git://github.com/guilhermef/OptimizelyAbCallback.git"
   },
-  "keywords": [],
+  "keywords": ["OptimizelyAB"],
   "author": "Guilherme Souza",
   "license": "MIT",
   "readmeFilename": "README.md",
