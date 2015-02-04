@@ -6,18 +6,22 @@ Optimizely with callbacks.
 
 Configure your optmizely to run the
 
+```JavaScript
     /* _optimizely_evaluate=force */
     window.OptimizelyAbCallback.init();
     /* _optimizely_evaluate=safe */
+```
 
 on the experiment screen click on "Options" then "Experiment Javascript"
 
 ![step-1](/../master/docs/step-1.png?raw=true "step-1")
 
 on the script's popup add:
+```JavaScript
     /* _optimizely_evaluate=force */
     window.OptimizelyAbCallback.init();
     /* _optimizely_evaluate=safe */
+```
 
 and then "apply" and "save".
 
@@ -25,17 +29,20 @@ and then "apply" and "save".
 
 put the JS file [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)) on your page and run:
 
+```JavaScript
     window.OptimizelyAbCallback.includeABScript(OptimizelyProjectId);
+```
 
 That will include the optimizely script.
 after that just call:
 
+```JavaScript
     var experimentCallback = function(variation) {
       console.log(variation);
     };
 
     window._optiab.push([experimentID, experimentCallback]);
-
+```
 
 ## Contributing
 
