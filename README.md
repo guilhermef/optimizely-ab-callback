@@ -1,4 +1,4 @@
-# OptimizelyAbCallback
+# OptimizelyAbCallback [![Build Status](https://travis-ci.org/guilhermef/optimizely-ab-callback.svg?branch=master)](https://travis-ci.org/guilhermef/optimizely-ab-callback)
 
 Optimizely with callbacks.
 
