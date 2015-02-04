@@ -14,7 +14,7 @@
     "node_modules",
     "src",
     "docs",
-    "Gruntfile.js",
+    "Gruntfile.js"
   ],
   "keywords": ["OptimizelyAB"],
   "author": "Guilherme Souza",
