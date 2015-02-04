@@ -1,12 +1,32 @@
 {
   "name": "OptimizelyAbCallback",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "dist/OptimizelyAbCallback.min.js",
+  "description": "OptimizelyAB with callbacks",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guilhermef/OptimizelyAbCallback.git"
+  },
   "ignore": [
-    "**/.*",
+    ".*",
+    "**/*.txt",
+    "spec",
     "node_modules",
-    "bower_components",
-    "test"
+    "src",
+    "docs",
+    "Gruntfile.js",
   ],
-  "dependencies": {}
+  "keywords": ["OptimizelyAB"],
+  "author": "Guilherme Souza",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt": "~0.4.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jasmine": "~0.8.2"
+  }
 }
