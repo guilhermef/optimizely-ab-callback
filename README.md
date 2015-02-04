@@ -18,7 +18,7 @@ Configure your optmizely to run the
 
     and then "apply" and "save".
 
-grab the [source](https://github.com/guilhermef/optimizely-ab-callback/dist/OptimizelyAbCallback.js) ([minified](https://github.com/guilhermef/optimizely-ab-callback/dist/OptimizelyAbCallback.min.js)).
+grab the [source](../master/dist/OptimizelyAbCallback.js) ([minified](../master/dist/OptimizelyAbCallback.min.js)).
 
 put the JS file on your page and run:
 
